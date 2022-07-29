@@ -2,7 +2,7 @@ var item, resolutions, emojis;
 
 
 let element_list = document.getElementById('list');
-resolutions = ['yoga vinyasa', 'Pilates', 'Tibetan bowls', 'Meditation.', 'Tai Chi', 'Aromatherapy'];
+resolutions = ['Yoga Vinyasa', 'Pilates', 'Tibetan Bowls', 'Meditation', 'Tai Chi', 'Aromatherapy'];
 emojis = ['🧘‍♀️', '🤸🏽‍♂️', '🥣', '🧎🏽‍♀️', '㊙️', '🪔'];
 
 resolutions.forEach((item) => {
@@ -20,6 +20,7 @@ resolutions.forEach((item) => {
     new_li.appendChild(new_span2);
     let new_span3 = document.createElement('span');
     if (resolutions == true) {
+      item = resolutions.shift();
     }
 
     new_li.appendChild(new_span3);
